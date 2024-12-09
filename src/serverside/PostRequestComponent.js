@@ -15,9 +15,9 @@ const PostRequestComponent = () => {
     };
 
     try {
-      const response = await fetch('/api/service-shuffle/12', {
+      const response = await fetch('/api/service-shuffle/8', {
         method: 'POST',
-        headers: {'Access-Control-Allow-Origin': 'http://localhost:8080'},        
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 

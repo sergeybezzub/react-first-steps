@@ -3,7 +3,6 @@ import ListComponent from './modules/ListComponent';
 import './App.css';
 import RenderComponent from './modules/RenderComponent';
 import SimpleList from './modules/SimpleList'
-/*import ShufleNumbersFunction  from './serverside/ShufleNumbersFunction'*/
 import PostRequestComponent  from './serverside/PostRequestComponent'
 
 function App() {
