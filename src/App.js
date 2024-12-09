@@ -14,12 +14,12 @@ function App() {
     {id: 4, name:'row-4'}
   ];
 
-  
+  const amount = 6;
 
   return (
     <div className='App'>
       <header className='App-header'>
-      <PostRequestComponent />
+      <PostRequestComponent amount={amount}/>
       <SimpleList rows={rows} />
       <RenderComponent />
       <div><CounterComponent /></div>

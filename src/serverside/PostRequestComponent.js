@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const PostRequestComponent = () => {
+const PostRequestComponent = (props) => {
   const [responseData, setResponseData] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -15,9 +15,10 @@ const PostRequestComponent = () => {
     };
 
     try {
-      const response = await fetch('/api/service-shuffle/8', {
+      console.log('/api/service-shuffle/'+ props.amount)
+      const response = await fetch('/api/service-shuffle/' + props.amount, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' },        
         body: JSON.stringify(data),
       });
 
