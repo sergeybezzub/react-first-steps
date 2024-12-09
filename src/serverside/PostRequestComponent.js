@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ResponseList from '../modules/ResponseList'
 
 const PostRequestComponent = (props) => {
   const [responseData, setResponseData] = useState('');
@@ -44,7 +45,7 @@ const PostRequestComponent = (props) => {
       {responseData && (
         <div>
           <h3>Response Data:</h3>
-          <pre>{JSON.stringify(responseData, null, 2)}</pre>
+          <ResponseList rows={responseData} />
         </div>
       )}
     </div>
